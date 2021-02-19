@@ -89,8 +89,9 @@ body {
   letter-spacing: 0.06em;
   min-width: 200px;
   padding: 10px 32px;
-  border-radius: 4px;
   margin-top: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .button.secondary {
@@ -102,7 +103,6 @@ body {
   letter-spacing: 0.03em;
   min-width: 78px;
   padding: 6px 22px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 .button.primary:focus,
@@ -110,6 +110,9 @@ body {
 .button.secondary:focus {
   color: var(--primery-white-color);
   background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 /*container*/
 .container {
@@ -200,9 +203,38 @@ body {
   margin-right: 50px;
 }
 
-.contacts .contact-item {
+.contact-item {
   font-style: normal;
   color: currentColor;
+}
+.ls-item {
+  display: flex;
+  align-items: center;
+}
+.envelope {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+}
+.icon-smartphone {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+}
+/* .contact-item::before {
+  display: inline-block;
+  content: '';
+  margin-right: 10px;
+  background-size: contain;
+}
+.mail:nth-child(1) {
+  width: 16px;
+  background-image: url(../img/icons/envelope.svg);
+} */
+.envelope:hover {
+  fill: var(--accent-color);
 }
 .contacts .link:hover,
 .contacts .link:focus,
@@ -297,6 +329,9 @@ body {
 /* .team {
   justify-content: space-between;
 } */
+.s-back {
+  background: #f5f4fa;
+}
 .team .title {
   color: var(--title-text-color);
   font-weight: 500;
@@ -318,6 +353,34 @@ body {
 .img-content {
   padding: 30px 0px;
   text-align: center;
+}
+.social {
+  display: flex;
+
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-top: 16px;
+  outline: 1px solid red;
+}
+.soc-lnk {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 44px;
+  height: 44px;
+}
+.tw {
+  background-image: url(../img/icons/Ellipse.svg);
+}
+
+.tw:hover {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+.soc-icon {
+}
+.soc-icon:not(:first-child) {
+  margin-left: 10px;
 }
 /*BLOCK фильтр по кнопкам*/
 .box-flt {
@@ -343,6 +406,7 @@ body {
 }
 .project-item {
   display: block;
+  border: 1px solid #eeeeee;
 }
 .projects .title {
   color: var(--title-text-color);
@@ -361,12 +425,14 @@ body {
 .card {
   text-decoration: none;
   display: block;
+}
+.t-item > .card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.projects .card {
-  border: 1px solid #eeeeee;
+.card {
+  background: #ffffff;
 }
 .cars-link {
 }
