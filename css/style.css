@@ -130,8 +130,8 @@ body {
   padding-bottom: 0px;
 }
 /*header*/
-.line-head {
-  max-width: 1600px;
+.line {
+  max-width: 100%;
   border-bottom: 1px solid #ececec;
 }
 /*line*/
