@@ -485,7 +485,7 @@ body {
 .footer-b {
   margin-left: 70px;
 }
-.f-flex {
+.container.f-flex {
   display: flex;
 }
 .footer .logo {
@@ -526,7 +526,6 @@ body {
 .f-social {
   display: flex;
 }
-
 .homepages {
   width: 44px;
   height: 44px;
