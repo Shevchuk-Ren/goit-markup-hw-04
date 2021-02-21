@@ -187,6 +187,10 @@ body {
   line-height: 1.42;
   letter-spacing: 0.02em;
 }
+.nav-item {
+  padding-top: 31px;
+  padding-bottom: 31px;
+}
 .site-nav .nav-item.current {
   color: var(--accent-color);
 }
@@ -203,30 +207,27 @@ body {
   margin-right: 50px;
 }
 
-.contact-item {
-  font-style: normal;
-  color: currentColor;
-}
 .ls-item {
   display: flex;
   align-items: center;
 }
+
 .envelope-item {
+  padding-top: 31px;
+  padding-bottom: 31px;
   color: inherit;
 }
-.envelope {
-  margin-right: 10px;
-
-  fill: currentColor;
-}
+.envelope,
 .smartphone {
   margin-right: 10px;
   fill: currentColor;
 }
 
 .envelope:hover,
+.envelope:focus,
 .smartphone:hover {
   fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 .contacts .link:hover,
 .contacts .link:focus,
