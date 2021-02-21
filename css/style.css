@@ -105,6 +105,11 @@ body {
   padding: 6px 22px;
   border-radius: 4px;
 }
+.button.secondary:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px var(--accent-color);
+  border-radius: 4px;
+}
 .button.primary:focus,
 .button.secondary:hover,
 .button.secondary:focus {
@@ -174,6 +179,12 @@ body {
 .site-nav .link {
   color: var(--title-text-color);
 }
+.logo:focus,
+.site-nav .link:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px var(--accent-color);
+  border-radius: 4px;
+}
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
@@ -222,7 +233,14 @@ body {
   margin-right: 10px;
   fill: currentColor;
 }
-
+.envelope:focus,
+.smartphone:focus,
+.contacts .link:focus,
+.f-contacts:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px var(--accent-color);
+  border-radius: 4px;
+}
 .envelope:hover,
 .envelope:focus,
 .smartphone:hover {
@@ -368,7 +386,12 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+.soc-lnk:focus {
+  outline: none;
+  background-color: var(--accent-color);
+  fill: #ffffff;
+  border-radius: 50%;
+}
 .soc-lnk:hover {
   background-color: var(--accent-color);
   fill: #ffffff;
@@ -397,25 +420,32 @@ body {
   display: flex;
 }
 .clns {
-  width: 170px;
-  height: 90px;
+}
+.clients-lnk {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #afb1b8;
+  color: #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+}
+
+.clients-lnk:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px var(--accent-color);
   border-radius: 4px;
 }
-.svg:focus,
-.svg:hover {
-  fill: var(--accent-color);
-}
-.clns:focus,
-.clns:hover {
+
+.clients-lnk:hover,
+.clients-lnk:focus {
   border: 1px solid var(--accent-color);
+  color: var(--accent-color);
 }
 
 .svg {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 /*BLOCK Projects примеры проектов*/
 .projects {
@@ -435,8 +465,13 @@ body {
 .project-item {
   display: block;
 }
-.project-item:focus,
+
 .project-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.card:focus {
+  outline: none;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -510,6 +545,11 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+.contact-footer:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px var(--accent-color);
+  border-radius: 4px;
+}
 .ft-item:not(:last-child) {
   padding-bottom: 9px;
 }
@@ -538,6 +578,12 @@ body {
   justify-content: center;
 }
 
+.homepages:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px var(--accent-color);
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
 .homepages:hover {
   background-color: var(--accent-color);
   fill: #ffffff;
